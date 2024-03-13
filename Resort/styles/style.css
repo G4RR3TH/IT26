@@ -1,0 +1,401 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d6d6d6;
+}
+
+header {
+    background-color: #3b5998;
+    color: #fff;
+    padding: 20px;
+    overflow: hidden;
+}
+
+h1 {
+    margin: 0;
+    font-size: 16px;
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    border-radius: 10px;
+    padding: 8px;
+    transition: .5s ease;
+    color: #3b5998;
+    background-color: antiquewhite;
+}
+
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+
+
+
+.heroimage {
+    background-image: url(../images/heroimage2.png);
+    background-size: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+
+.wrapper {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #3b5998;
+}
+
+.content {
+    margin-top: 20px;
+    color: #333333;
+}
+
+.content p{
+    font-size: 16px;
+}
+
+.gallery {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.grid {
+    list-style-type: none;
+    padding: 0;
+}
+
+.grid li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.grid li img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    .content {
+        margin-top: 8px;
+    }
+
+    .gallery {
+        margin-top: 15px;
+    }
+
+    .grid li {
+        margin: 4px;
+    }
+
+    .grid li img {
+        width: 120px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 18px;
+    }
+
+    .content {
+        margin-top: 6px;
+    }
+
+    .gallery {
+        margin-top: 10px;
+    }
+
+    .grid li {
+        margin: 3px;
+    }
+
+    .grid li img {
+        width: 100px;
+    }
+}
+
+footer {
+    background-color: #3b5998;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 30px;
+}
+
+.title h1 {
+    color: #3b5998;
+    font-size: 24px;
+}
+
+
+
+.container {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding-right: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.75);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.card-content h4 {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.card-content p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.card:hover,
+.grid li:hover img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-right: 10px;
+    }
+
+    .card {
+        width: 45%;
+        margin: 5px;
+    }
+
+    .card img {
+        height: 120px;
+    }
+
+    .card-content {
+        padding: 8px;
+    }
+
+    .card-content h2 {
+        font-size: 18px;
+    }
+
+    .card-content h4 {
+        font-size: 14px;
+    }
+
+    .card-content p {
+        font-size: 12px;
+    }
+}
+
+.picture {
+    background-image: url(../images/heroimage2.png);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+}
+
+.background-form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.booking-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.con h2 {
+    margin: 0;
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+}
+
+label {
+    font-size: 18px;
+    color: #555;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #3b5998;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #254588;
+}
+
+@media (max-width: 768px) {
+    .background-form {
+        width: 90%;
+    }
+
+    .booking-form {
+        max-width: 90%;
+    }
+
+    .con h2 {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="date"],
+    button {
+        padding: 6px;
+        font-size: 12px;
+        margin-top: 6px;
+        margin-bottom: 6px;
+    }
+}
+
+.pics {
+    background-image: url(../images/heroimage2.png);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    margin: 0;
+}
+
+.ab {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+.card2 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about {
+    text-align: center;
+}
+
+.about h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.about h3 {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #3b5998;
+}
+
+.about p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #161616;
+}
